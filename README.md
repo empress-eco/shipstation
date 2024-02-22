@@ -1,31 +1,72 @@
-# Shipstation Integration
+<p align="center">
+Consolidate and manage multiple ShipStation accounts with ease using our custom ShipStation app.
+<br />
+<a href="https://empress.eco/">Visit Our Website</a>
+·
+<a href="https://grow.empress.eco/">Get Support</a>
+·
+<a href="https://github.com/empress-eco/shipstation/issues">Report Bugs</a>
+·
+<a href="https://github.com/empress-eco/shipstation/issues">Request Feature</a>
+</p>
 
-A custom ShipStation application built on top of the [Frappe](https://github.com/frappe/frappe) framework and [ERPNext](https://github.com/frappe/erpnext).
 
-## Features
+## About The Project
 
-The following workflows are available in this application:
+### 📖 Overview
+Empress ShipStation Integration is a solution designed for businesses aiming to streamline their shipping and distribution operations. This custom application consolidates multiple ShipStation accounts into a single Empress instance, providing a centralized platform for managing your shipping tasks.
 
-- Sync multiple ShipStation accounts with a single ERPNext instance.
-- Configure individual stores in each ShipStation account to different companies, warehouses, cost centers and account heads.
-- Periodically fetch products, orders and shipments from all ShipStation accounts.
-- Identify stores connected to the Amazon marketplace, and add hooks for other Frappe applications to process Amazon orders.
-- Shipping label generation (can be enabled per Shipstation account)
+### 🌟 Key Features
+- Synchronize multiple ShipStation accounts.
+- Configure individual stores to different companies, warehouses, cost centers, and account heads.
+- Regularly fetch products, orders, and shipments from all connected ShipStation accounts.
+- Recognize stores connected to the Amazon marketplace.
+- Generate shipping labels swiftly and efficiently.
 
-## Installation
+### 🛠 Technical Stack
+The application is built with the following technologies:
 
-```bash
-# get the application onto your bench
-bench get-app https://github.com/ParsimonyGit/shipstation_integration
+- [Framework](https://github.com/Empress/Empress)
+- [Empress](https://github.com/Empress/Empress)
+- [ShipStation Python client](https://github.com/agritheory/shipstation-client) by [AgriTheory](https://github.com/agritheory)
 
-# install the application onto a new site
+## Setup Instructions
+
+### Prerequisites
+Ensure you have the Framework and Empress installed on your system. Additionally, you should have a ShipStation account.
+
+### Installation
+Follow these steps to get the app running on your system:
+
+```sh
+# Clone the repository onto your bench
+git clone https://github.com/empress-eco/shipstation.git
+
+# Navigate into the cloned repository
+cd shipstation_integration
+
+# Install the application onto a new site
 bench --site <site_name> install-app shipstation_integration
 ```
 
-## Dependencies
+## Usage
+After installation, you can start syncing your ShipStation accounts and manage shipping operations more efficiently. Navigate to the 'Shipstation Integration' module in your Empress instance to begin.
 
-- [ShipStation Python client](https://github.com/agritheory/shipstation-client) by [AgriTheory](https://github.com/agritheory)
+## Contribution Guidelines
+We welcome and appreciate contributions! Follow these steps to contribute:
 
-## License
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
-[MIT](https://opensource.org/licenses/MIT)
+## License and Acknowledgements
+
+### License
+This project is under the MIT License. Your contributions are also licensed under the MIT License.
+
+### Acknowledgements
+Special thanks to [AgriTheory](https://github.com/agritheory) for the ShipStation Python client. 
+
+We are profoundly grateful to the Empress Community for their pioneering work and ongoing support. Their innovative and dedicated approach to crafting the essential tools that power this project has been instrumental in building robust and efficient functionalities.
